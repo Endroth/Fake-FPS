@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "fpsfake",
+	"version": "${version}",
+	"name": "FPS Fake",
+	"description": "Mostra um FPS absurdo (e falso) no F3. Só visual: o desempenho real não muda. Liga/desliga com a tecla K ou /fpsfake.",
+	"authors": ["Você"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.fpsfake.FpsFakeClient"]
+	},
+	"mixins": [
+		{
+			"config": "fpsfake.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
